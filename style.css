@@ -1,0 +1,50 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+#stop_watch {
+    min-height: 100vh;
+}
+#timer {
+    font-size: 7rem;
+    font-weight: bolder;
+    color: #f92672;
+    text-shadow: 2px 2px #f8a5c2;
+}
+.buttons button {
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 1.5rem;
+    background-color: #f92672;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 1rem 3.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -2px -2px 5px rgba(0, 0, 0, 0.1);
+}
+.buttons button:hover {
+    background-color: #f44583;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+}
+button[disabled] {
+    opacity: 0.5;
+    cursor: default;
+}
+
+@media all and (max-width: 614px) {
+    .buttons button {
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0.5rem 2.5rem;
+    }
+    #timer {
+        font-size: 4rem;
+        font-weight: 500;
+    }
+}
